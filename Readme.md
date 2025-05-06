@@ -34,10 +34,10 @@ This is particularly useful because YouTube URLs can come in various formats (e.
 1.  **Clone the repository (or download the files):**
     ```bash
     # If you have git
-    # git clone <repository-url>
+    # git clone https://github.com/edebu/youtube-channel-id-finder.git
     # cd youtube-channel-id-finder
     ```
-    If you downloaded the files, navigate to the project directory (`d:\LLM\get_youtube_channel_id`).
+    If you downloaded the files, navigate to the project directory.
 
 2.  **Install dependencies:**
     Open your terminal or command prompt in the project's root directory and run:
@@ -74,5 +74,3 @@ When you submit a YouTube channel URL:
 *   **Private/Unavailable Channels:** The tool will likely not work for private channels or URLs that don't point to a valid, public YouTube channel page.
 
 ---
-
-*Optional: If you take a screenshot of the app, you can upload it to an image hosting service (like Imgur) and replace `https://i.imgur.com/YOUR_SCREENSHOT_URL.png` with the actual URL to make the README even better!*
