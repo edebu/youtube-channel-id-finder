@@ -1,0 +1,86 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    display: flex; /* Enable flexbox for alignment */
+    align-items: center; /* Vertically align items in the middle */
+    justify-content: center; /* Horizontally center content */
+    color: #e62117; /* YouTube Red */
+    margin-bottom: 20px;
+}
+
+.header-icon {
+    width: 40px;  /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+#channel-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+input[type="url"] {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #e62117;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c41610;
+}
+
+#result-area {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    word-wrap: break-word;
+}
+
+#result {
+    color: #28a745; /* Success Green */
+    font-weight: bold;
+}
+
+#error {
+    color: #dc3545; /* Error Red */
+    font-weight: bold;
+}

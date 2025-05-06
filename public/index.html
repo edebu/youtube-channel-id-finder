@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Channel ID Finder</title>
+    <link rel="icon" href="/yt-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <img src="/yt-logo.svg" alt="YouTube Logo" class="header-icon">
+            <span>YouTube Channel ID Finder</span>
+        </h1>        <p>Enter the full URL of a YouTube channel (e.g., https://www.youtube.com/@youtube, https://www.youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ)</p>
+        <form id="channel-form">
+            <input type="url" id="youtube-url" placeholder="Enter YouTube Channel URL" required>
+            <button type="submit">Get Channel ID</button>
+        </form>
+        <div id="result-area">
+            <p id="loading" style="display: none;">Loading...</p>
+            <p id="result"></p>
+            <p id="error"></p>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
