@@ -12,7 +12,7 @@ addEventListener('fetch', event => {
  * Handles incoming requests, extracts YouTube Channel ID, and includes CORS headers.
  * @param {Request} request
  */
-async function handleRequest(request) {
+async function handleRequest(request, env) {
   const url = new URL(request.url)
 
   // Handle CORS preflight requests
@@ -36,7 +36,8 @@ async function handleRequest(request) {
       // Fetch the YouTube page
       const resp = await fetch(youtubeUrl, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+          'Authorization': `Bearer ${env.YOUTUBE_API_KEY}`,
         }
       })
 
