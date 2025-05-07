@@ -9,9 +9,9 @@ export default {
       const url = new URL(request.url)
 
       // Handle CORS preflight requests
-      // if (request.method === 'OPTIONS') {
-      //     return new Response(null, { headers: corsHeaders });
-      // }
+      if (request.method === 'OPTIONS') {
+          return new Response(null, { headers: corsHeaders });
+      }
 
       // Only respond to POST requests on the specified path
       if (request.method === 'POST' && url.pathname === '/api/get-channel-id') {
