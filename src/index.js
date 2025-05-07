@@ -1,7 +1,7 @@
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*', // Or specify your frontend domain e.g., 'https://your-frontend.com'
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type',
+  'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Allow Authorization header
 };
 
 addEventListener('fetch', event => {
