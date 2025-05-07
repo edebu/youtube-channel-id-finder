@@ -5,7 +5,7 @@ const corsHeaders = {
 };
 
 addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request))
+  event.respondWith(handleRequest(event.request, event.env))
 })
 
 /**
